@@ -1,0 +1,15 @@
+#wrap {
+  position: relative;
+}
+
+.inner {
+  min-width: 600px;
+  max-width: 960px;
+  box-sizing: border-box;
+  padding: 0 40px;
+  margin: 0 auto;
+}
+
+section {
+  padding: 80px 24px;
+}

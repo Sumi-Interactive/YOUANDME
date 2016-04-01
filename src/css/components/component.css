@@ -1,0 +1,226 @@
+/* Homepage */
+
+/* ================ Header =============== */
+header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 4;
+  background: rgba(255,255,255,.8);
+}
+
+header .Grid {
+  height: 80px;
+}
+
+header .Cell {
+  text-align: right;
+}
+
+header a {
+  color: $c-lite-text;
+  text-decoration: none;
+  font-size: $fs-bigger;
+  transition: all .4s ease-in-out;
+  padding: 4px 12px;
+  border-radius: 4px;
+}
+
+header a:hover {
+  color: $c-active;
+}
+
+header a.active {
+  background: $c-active;
+  color: $c-white;
+}
+
+/* ================ Landing =============== */
+.landing {
+  height: 100vh;
+  text-align: center;
+  position: relative;
+  box-sizing: border-box;
+  z-index: 3;
+}
+
+.landing .inner,
+.landing .Grid {
+  height: 100%;
+}
+
+.landing canvas {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.landing .inner {
+  position: relative;
+  z-index: 2;
+}
+
+.logo {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  width: 100%;
+  max-width: 960px;
+  min-width: 600px;
+  padding: 0 40px;
+  transform: translateX(-50%) translateY(-50%);
+  box-sizing: border-box;
+  display: inline-block;
+  transition: all .6s;
+  z-index: 10;
+}
+
+.logo img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  display: block;
+  max-width: 100%;
+  transition: all .6s;
+}
+
+.logo.fixed {
+  position: fixed;
+  top: 28px;
+  z-index: 10;
+}
+
+.logo.fixed img {
+  max-width: 200px;
+  left: 40px;
+  transform: translateX(0);
+}
+
+/* ================ About =============== */
+.about {
+  background: $c-lite-gray;
+}
+
+.about .Cell {
+  padding: 0 32px;
+  box-sizing: border-box;
+  font-size: $fs-small;
+  line-height: 1.6;
+}
+
+.about h3 {
+  display: block;
+  font-weight: normal;
+}
+
+.about ul {
+  margin: 0;
+  padding: 0;
+  color: $c-lite-text;
+}
+
+.about p {
+  color: $c-lite-text;
+}
+
+.about h3 img {
+  display: block;
+  height: 48px;
+  margin: 0 0 16px;
+}
+
+/* ================ Works =============== */
+.works {
+  text-align: center;
+}
+
+.works h2 {
+  text-align: center;
+  font-size: $fs-title;
+  font-weight: normal;
+  margin: 0 0 16px;
+}
+
+.works a {
+  color: $c-active;
+  font-size: $fs-bigger;
+  text-decoration: none;
+}
+
+.works a img {
+  width: 12px;
+  vertical-align: middle;
+  margin-left: 8px;
+}
+
+/* ================ Team =============== */
+.team {
+  background: $c-lite-gray;
+}
+
+.team h2 {
+  text-align: center;
+  font-size: 32px;
+  font-weight: normal;
+  margin: 0 0 56px;
+}
+
+.team .Cell {
+  text-align: center;
+}
+
+.team img {
+  display: block;
+  width: 100px;
+  margin: 0 auto 24px;
+}
+
+.team strong {
+  font-weight: normal;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.team p {
+  font-size: $fs-small;
+  margin: 0;
+  color: $c-lite-text;
+}
+
+/* ================ Contact =============== */
+.contact {
+  padding: 80px 0;
+}
+
+.contact h2 {
+  font-weight: normal;
+  font-size: $fs-sub-title;
+  margin: 0 0 32px;
+}
+
+.contact h3 {
+  font-weight: bold;
+  color: $c-lite-text;
+}
+
+.contact .address {
+  margin-bottom: 24px;
+  padding-left: 40px;
+  background: url(../img/icon-pin.png) no-repeat 0 center;
+  background-size: 20px;
+}
+
+.contact .address strong {
+  display: block;
+  font-weight: normal;
+}
+
+.contact .address span {
+  display: block;
+  color: $c-lite-text;
+}
+

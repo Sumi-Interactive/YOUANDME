@@ -1,0 +1,15 @@
+/* Colors */
+$c-text: #333;
+$c-lite-text: #888;
+$c-active: #51a7f9;
+$c-white: #fff;
+$c-gray: #ababab;
+$c-lite-gray: #fafafa;
+
+
+/* Font */
+$fs-small: 14px;
+$fs-normal: 16px;
+$fs-bigger: 20px;
+$fs-sub-title: 26px;
+$fs-title: 32px;
