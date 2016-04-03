@@ -12,7 +12,7 @@ var gulp = require('gulp'),
 
 
 gulp.task('html', function() {
-  return gulp.src('./src/index.html')
+  return gulp.src('./src/*.html')
     .pipe(htmlMin({collapseWhitespace: true}))
     .pipe(gulp.dest('./dist/'))
     .pipe(livereload());
