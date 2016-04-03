@@ -138,6 +138,10 @@ header a.active {
   text-align: center;
 }
 
+.works .inner {
+  max-width: 1200px;
+}
+
 .works h2 {
   text-align: center;
   font-size: $fs-title;
@@ -151,10 +155,15 @@ header a.active {
   text-decoration: none;
 }
 
-.works a img {
+.works a span img {
   width: 12px;
   vertical-align: middle;
   margin-left: 8px;
+}
+
+.works a > img {
+  display: block;
+  margin: 64px auto 40px;
 }
 
 /* ================ Team =============== */
