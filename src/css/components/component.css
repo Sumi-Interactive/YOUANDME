@@ -279,7 +279,7 @@ header a.active {
 }
 
 .app {
-  margin-top: 160px;
+  margin-top: 120px;
 }
 
 .app h2,
@@ -311,4 +311,18 @@ header a.active {
   color: $c-lite-text;
   font-size: $fs-small;
   font-weight: normal;
+}
+
+.backbutton {
+  text-decoration: none;
+  color: $c-active;
+  display: block;
+  margin-bottom: 40px;
+}
+
+.backbutton img {
+  width: 12px;
+  vertical-align: middle;
+  margin-right: 8px;
+  transform: rotate(180deg);
 }
