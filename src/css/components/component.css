@@ -256,14 +256,59 @@ header a.active {
   max-width: 200px;
   float: left;
   display: block;
-  margin-right: 24px;
-  vertical-align: middle;
+  margin: 10px 24px 10px 0;
 }
 
 .logo.static span {
+  display: block;
   float: left;
   font-weight: normal;
+  color: $c-active;
+  font-size: $fs-small;
+}
+
+.workpage h1 {
+  height: 40px;
+  line-height: 40px;
+  margin: 20px 0;
+}
+
+.workpage section {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.app {
+  margin-top: 160px;
+}
+
+.app h2,
+.website h2,
+.retail h2,
+.branding h2 {
+  color: $c-lite-text;
+  font-size: $fs-big;
+  font-weight: normal;
+  margin: 0 0 -40px;
+  border-bottom: 2px solid #eee;
+}
+
+.case {
+  margin: 80px 0;
+}
+
+.case img {
+  display: block;
+  max-width: 100%;
+  margin: 16px 0;
+}
+
+.case span {
   color: $c-text;
 }
 
-.workpage {}
+.case span b {
+  color: $c-lite-text;
+  font-size: $fs-small;
+  font-weight: normal;
+}
