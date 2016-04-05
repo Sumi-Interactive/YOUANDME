@@ -10,9 +10,10 @@ $(function () {
       particleRadius: 4,
       proximity: 190
     });
-  } else {
-  }
 
+    // Fluidbox
+    $('.case a').fluidbox();
+  }
 
   // Waypoints Init
   // Logo
@@ -66,5 +67,4 @@ $(function () {
     $('header a:eq(3)').addClass('active');
   }, { offset: '20%' });
 
-  $('.case a').fluidbox();
 });
