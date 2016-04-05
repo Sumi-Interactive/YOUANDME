@@ -106,35 +106,19 @@ header .Cell.\-8of12 {
 }
 
 /* ================ Works =============== */
-.works {
-  text-align: center;
-}
-
 .works .inner {
   max-width: 1200px;
 }
 
 .works h2 {
-  text-align: center;
   font-size: $fs-title;
-  font-weight: normal;
-  margin: 0 0 16px;
 }
 
 .works a {
-  color: $c-active;
   font-size: $fs-bigger;
-  text-decoration: none;
-}
-
-.works a span img {
-  width: 12px;
-  vertical-align: middle;
-  margin-left: 8px;
 }
 
 .works a > img {
-  display: block;
   margin: 64px auto 40px;
 }
 

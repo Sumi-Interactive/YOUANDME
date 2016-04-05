@@ -103,3 +103,33 @@ header a.active {
   color: $c-lite-text;
 }
 
+/* ================ Works =============== */
+.works {
+  text-align: center;
+}
+
+.works h2 {
+  text-align: center;
+  font-size: $fs-bigger;
+  font-weight: normal;
+  margin: 0 0 16px;
+}
+
+.works a {
+  color: $c-active;
+  font-size: $fs-normal;
+  text-decoration: none;
+}
+
+.works a span img {
+  width: 12px;
+  vertical-align: middle;
+  margin-left: 8px;
+}
+
+.works a > img {
+  display: block;
+  margin: 24px auto;
+  max-width: 100%;
+}
+
