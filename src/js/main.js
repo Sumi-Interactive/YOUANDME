@@ -10,6 +10,11 @@ $(function () {
 
   // Waypoints Init
   // Logo
+  $('.logo').on('click', function(e) {
+    e.preventDefault();
+    window.location.href = '/';
+  });
+
   $('.landing').waypoint(function(direction) {
     if (direction == 'down') {
       $('.logo').addClass('fixed');

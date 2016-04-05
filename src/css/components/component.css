@@ -71,6 +71,7 @@ header a.active {
   display: inline-block;
   transition: all .6s;
   z-index: 10;
+  cursor: pointer;
 }
 
 .logo img {
@@ -257,7 +258,7 @@ header a.active {
 .logo.static span {
   display: block;
   float: left;
-  font-weight: normal;
+  font-weight: 500;
   color: $c-active;
   font-size: $fs-small;
 }
