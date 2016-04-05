@@ -160,33 +160,21 @@ header .Cell.\-8of12 {
 
 /* ================ Header =============== */
 .logo.static {
-  width: 200px;
-  min-width: initial;
-  max-width: initial;
   position: static;
   width: 100%;
   box-sizing: border-box;
   display: inline-block;
   transform: none;
-  padding: 0;
   overflow: hidden;
+  margin-top: 8px;
 }
 
 .logo.static img {
-  position: static;
-  transform: none;
-  max-width: 200px;
-  float: left;
-  display: block;
-  margin: 10px 24px 10px 0;
+  margin-top: 16px;
+  margin-bottom: 16px;
 }
 
 .logo.static span {
-  display: block;
-  float: left;
-  font-weight: 500;
-  color: $c-active;
-  font-size: $fs-small;
 }
 
 .workpage h1 {
@@ -200,39 +188,12 @@ header .Cell.\-8of12 {
   padding-bottom: 0;
 }
 
-.app {
-  margin-top: 120px;
-}
-
 .app h2,
 .website h2,
 .retail h2,
 .branding h2 {
-  color: $c-lite-text;
   font-size: $fs-big;
-  font-weight: normal;
-  margin: 0 0 -40px;
-  border-bottom: 2px solid #eee;
 }
 
-.case {
-  margin: 80px 0;
-}
-
-.case img {
-  display: block;
-  max-width: 100%;
-  margin: 16px 0;
-}
-
-.case span {
-  color: $c-text;
-}
-
-.case span b {
-  color: $c-lite-text;
-  font-size: $fs-small;
-  font-weight: normal;
-}
 
 }
