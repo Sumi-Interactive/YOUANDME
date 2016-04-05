@@ -206,6 +206,18 @@ header a.active {
   color: $c-lite-text;
 }
 
+.contact a {
+  color: #51a7f9;
+}
+
+/* ================ Footer =============== */
+footer {
+  background: $c-lite-gray;
+  text-align: center;
+  padding: 40px 0;
+  font-size: $fs-small;
+  color: $c-lite-text;
+}
 
 /* Workspage */
 
@@ -271,4 +283,8 @@ header a.active {
   color: $c-lite-text;
   font-size: $fs-small;
   font-weight: normal;
+}
+
+/* ================ Footer =============== */
+footer {
 }
