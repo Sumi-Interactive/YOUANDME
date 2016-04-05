@@ -70,7 +70,7 @@ header a.active {
   box-sizing: border-box;
   display: inline-block;
   transition: all .6s;
-  z-index: 10;
+  z-index: 1001;
   cursor: pointer;
 }
 
@@ -87,7 +87,6 @@ header a.active {
 .logo.fixed {
   position: fixed;
   top: 28px;
-  z-index: 1001;
 }
 
 .logo.fixed img {
