@@ -1,13 +1,41 @@
 /* Homepage */
 
+@media only screen and (min-width: 600px) {
+
 /* ================ Header =============== */
+.logo {
+  display: inline-block;
+  left: 50%;
+  top: 50%;
+  max-width: 960px;
+  min-width: 600px;
+  padding: 0 40px;
+  transform: translateX(-50%) translateY(-50%);
+  transition: all .6s;
+  background: none;
+}
+
+.logo img {
+  height: initial;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  transition: all .6s;
+}
+
+.logo.fixed {
+  top: 28px;
+}
+
+.logo.fixed img {
+  max-width: 200px;
+  left: 40px;
+  transform: translateX(0);
+}
+
 header {
-  position: fixed;
-  left: 0;
   top: 0;
-  width: 100%;
-  z-index: 1000;
-  background: rgba(255,255,255,.8);
 }
 
 header .Grid {
@@ -18,21 +46,17 @@ header .Cell {
   text-align: right;
 }
 
-header a {
-  color: $c-lite-text;
-  text-decoration: none;
-  transition: all .4s ease-in-out;
-  padding: 4px 12px;
-  border-radius: 4px;
+header .Cell.\-4of12 {
+  display: block;
 }
 
-header a:hover,
-header a.active {
-  color: $c-active;
+header .Cell.\-8of12 {
+  width: calc(100%*8/12);
 }
 
 /* ================ Landing =============== */
 .landing {
+  display: block;
   height: 100vh;
   text-align: center;
   position: relative;
@@ -56,43 +80,6 @@ header a.active {
 .landing .inner {
   position: relative;
   z-index: 2;
-}
-
-.logo {
-  position: fixed;
-  left: 50%;
-  top: 50%;
-  width: 100%;
-  max-width: 960px;
-  min-width: 600px;
-  padding: 0 40px;
-  transform: translateX(-50%) translateY(-50%);
-  box-sizing: border-box;
-  display: inline-block;
-  transition: all .6s;
-  z-index: 1001;
-  cursor: pointer;
-}
-
-.logo img {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translateX(-50%) translateY(-50%);
-  display: block;
-  max-width: 100%;
-  transition: all .6s;
-}
-
-.logo.fixed {
-  position: fixed;
-  top: 28px;
-}
-
-.logo.fixed img {
-  max-width: 200px;
-  left: 40px;
-  transform: translateX(0);
 }
 
 /* ================ About =============== */
@@ -320,4 +307,6 @@ header a.active {
   vertical-align: middle;
   margin-right: 8px;
   transform: rotate(180deg);
+}
+
 }

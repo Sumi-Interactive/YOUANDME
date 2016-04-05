@@ -1,0 +1,64 @@
+/* Homepage */
+
+.logo {
+  display: block;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1001;
+  padding: 16px;
+  box-sizing: border-box;
+  background: rgba(255,255,255,.8);
+  cursor: pointer;
+}
+
+.logo img {
+  display: block;
+  max-width: 100%;
+  height: 20px;
+  margin: 0 auto;
+}
+
+header {
+  position: fixed;
+  left: 0;
+  top: 52px;
+  width: 100%;
+  z-index: 1000;
+  background: rgba(255,255,255,.8);
+}
+
+header .Grid {
+  height: 40px;
+}
+
+header .Cell {
+  text-align: center;
+}
+
+header .Cell.\-4of12 {
+  display: none;
+}
+
+header .Cell.\-8of12 {
+  width: 100%;
+}
+
+header a {
+  color: $c-lite-text;
+  text-decoration: none;
+  transition: all .4s ease-in-out;
+  padding: 4px 12px;
+  border-radius: 4px;
+}
+
+header a:hover,
+header a.active {
+  color: $c-active;
+}
+
+/* ================ Landing =============== */
+.landing {
+  display: none;
+}
