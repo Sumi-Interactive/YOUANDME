@@ -1,6 +1,5 @@
 var gulp = require('gulp'),
     postcss = require('gulp-postcss'),
-    autoprefixer = require('autoprefixer'),
     cssnext = require('cssnext'),
     postcssimport = require('postcss-import');
     precss = require('precss'),
