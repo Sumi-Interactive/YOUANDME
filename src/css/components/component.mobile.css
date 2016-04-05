@@ -1,0 +1,274 @@
+/* Homepage */
+
+/* ================ Header =============== */
+.logo {
+  display: block;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1001;
+  padding: 16px;
+  box-sizing: border-box;
+  background: rgba(255,255,255,.8);
+  cursor: pointer;
+}
+
+.logo img {
+  display: block;
+  max-width: 100%;
+  height: 20px;
+  margin: 0 auto;
+}
+
+header {
+  position: fixed;
+  left: 0;
+  top: 52px;
+  width: 100%;
+  z-index: 1000;
+  background: rgba(255,255,255,.8);
+}
+
+header .Grid {
+  height: 40px;
+}
+
+header .Cell {
+  text-align: center;
+}
+
+header .Cell.\-4of12 {
+  display: none;
+}
+
+header .Cell.\-8of12 {
+  width: 100%;
+}
+
+header a {
+  color: $c-lite-text;
+  text-decoration: none;
+  transition: all .4s ease-in-out;
+  padding: 4px 12px;
+  border-radius: 4px;
+}
+
+header a:hover,
+header a.active {
+  color: $c-active;
+}
+
+/* ================ Landing =============== */
+.landing {
+  display: none;
+}
+
+/* ================ About =============== */
+.about {
+  background: $c-lite-gray;
+  padding-top: 120px;
+}
+
+.about .Cell {
+  margin: 24px 0;
+  box-sizing: border-box;
+  font-size: $fs-small;
+  line-height: 1.6;
+}
+
+.about .Cell.\-4of12 {
+  width: 100%;
+}
+
+.about h3 {
+  display: block;
+  font-weight: normal;
+  text-align: center;
+}
+
+.about h3 img {
+  display: block;
+  height: 36px;
+  margin: 0 auto 16px;
+}
+
+.about ul {
+  margin: 0;
+  padding: 0 0 0 16px;
+  color: $c-lite-text;
+}
+
+.about p {
+  color: $c-lite-text;
+}
+
+/* ================ Works =============== */
+.works {
+  text-align: center;
+}
+
+.works h2 {
+  text-align: center;
+  font-size: $fs-bigger;
+  font-weight: normal;
+  margin: 0 0 16px;
+}
+
+.works a {
+  color: $c-active;
+  font-size: $fs-normal;
+  text-decoration: none;
+}
+
+.works a span img {
+  width: 12px;
+  vertical-align: middle;
+  margin-left: 8px;
+}
+
+.works a > img {
+  display: block;
+  margin: 24px auto;
+  max-width: 100%;
+}
+
+/* ================ Team =============== */
+.team {
+  background: $c-lite-gray;
+}
+
+.team h2 {
+  text-align: center;
+  font-size: $fs-bigger;
+  font-weight: normal;
+  margin: 0 0 32px;
+}
+
+.team .Cell {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.team img {
+  display: block;
+  width: 100px;
+  margin: 0 auto 12px;
+}
+
+.team strong {
+  font-weight: normal;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.team p {
+  font-size: $fs-small;
+  margin: 0;
+  color: $c-lite-text;
+}
+
+/* ================ Contact =============== */
+.contact .Cell {
+  width: 100%;
+}
+
+.contact h2 {
+  font-weight: normal;
+  font-size: $fs-bigger;
+  margin: 0 0 24px;
+  text-align: center;
+}
+
+.contact h3 {
+  font-weight: normal;
+  color: $c-lite-text;
+  text-align: center;
+}
+
+.contact .address {
+  margin-bottom: 24px;
+  padding-left: 40px;
+  background: url(../img/icon-pin.png) no-repeat 0 center;
+  background-size: 20px;
+  font-size: $fs-small;
+  line-height: 1.5;
+}
+
+.contact .address strong {
+  display: block;
+  font-weight: normal;
+}
+
+.contact .address span {
+  display: block;
+  color: $c-lite-text;
+}
+
+
+/* Workspage */
+
+/* ================ Header =============== */
+.workpage header .Cell.\-4of12 {
+  display: block;
+}
+
+.logo.static {
+  margin: 0;
+  min-width: initial;
+  max-width: initial;
+  padding: 0;
+  height: 52px;
+  line-height: 52px;
+}
+
+.logo.static img {
+  position: static;
+  transform: none;
+  max-width: 200px;
+  display: inline-block;
+  margin-right: 12px;
+  vertical-align: middle;
+}
+
+.logo.static span {
+  display: inline-block;
+  font-weight: 500;
+  color: $c-active;
+  font-size: $fs-small;
+}
+
+.app {
+  margin-top: 120px;
+}
+
+.app h2,
+.website h2,
+.retail h2,
+.branding h2 {
+  color: $c-lite-text;
+  font-weight: normal;
+  margin: 0 0 -40px;
+  border-bottom: 2px solid #eee;
+}
+
+.case {
+  margin: 80px 0;
+}
+
+.case img {
+  display: block;
+  max-width: 100%;
+  margin: 16px 0;
+}
+
+.case span {
+  color: $c-text;
+}
+
+.case span b {
+  color: $c-lite-text;
+  font-size: $fs-small;
+  font-weight: normal;
+}

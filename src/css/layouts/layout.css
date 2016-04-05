@@ -3,13 +3,23 @@
 }
 
 .inner {
-  min-width: 600px;
-  max-width: 960px;
   box-sizing: border-box;
-  padding: 0 40px;
+  padding: 0 16px;
   margin: 0 auto;
 }
 
 section {
-  padding: 80px 24px;
+  padding: 24px 0;
+}
+
+@media only screen and (min-width: 600px) {
+  .inner {
+    min-width: 600px;
+    max-width: 960px;
+    padding: 0 40px;
+  }
+
+  section {
+    padding: 80px 24px;
+  }
 }

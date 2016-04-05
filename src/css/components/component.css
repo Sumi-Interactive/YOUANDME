@@ -1,13 +1,41 @@
 /* Homepage */
 
+@media only screen and (min-width: 600px) {
+
 /* ================ Header =============== */
+.logo {
+  display: inline-block;
+  left: 50%;
+  top: 50%;
+  max-width: 960px;
+  min-width: 600px;
+  padding: 0 40px;
+  transform: translateX(-50%) translateY(-50%);
+  transition: all .6s;
+  background: none;
+}
+
+.logo img {
+  height: initial;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  transition: all .6s;
+}
+
+.logo.fixed {
+  top: 28px;
+}
+
+.logo.fixed img {
+  max-width: 200px;
+  left: 40px;
+  transform: translateX(0);
+}
+
 header {
-  position: fixed;
-  left: 0;
   top: 0;
-  width: 100%;
-  z-index: 1000;
-  background: rgba(255,255,255,.8);
 }
 
 header .Grid {
@@ -18,21 +46,17 @@ header .Cell {
   text-align: right;
 }
 
-header a {
-  color: $c-lite-text;
-  text-decoration: none;
-  transition: all .4s ease-in-out;
-  padding: 4px 12px;
-  border-radius: 4px;
+header .Cell.\-4of12 {
+  display: block;
 }
 
-header a:hover,
-header a.active {
-  color: $c-active;
+header .Cell.\-8of12 {
+  width: calc(100%*8/12);
 }
 
 /* ================ Landing =============== */
 .landing {
+  display: block;
   height: 100vh;
   text-align: center;
   position: relative;
@@ -58,208 +82,99 @@ header a.active {
   z-index: 2;
 }
 
-.logo {
-  position: fixed;
-  left: 50%;
-  top: 50%;
-  width: 100%;
-  max-width: 960px;
-  min-width: 600px;
-  padding: 0 40px;
-  transform: translateX(-50%) translateY(-50%);
-  box-sizing: border-box;
-  display: inline-block;
-  transition: all .6s;
-  z-index: 1001;
-  cursor: pointer;
-}
-
-.logo img {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translateX(-50%) translateY(-50%);
-  display: block;
-  max-width: 100%;
-  transition: all .6s;
-}
-
-.logo.fixed {
-  position: fixed;
-  top: 28px;
-}
-
-.logo.fixed img {
-  max-width: 200px;
-  left: 40px;
-  transform: translateX(0);
-}
-
 /* ================ About =============== */
 .about {
-  background: $c-lite-gray;
+  padding-top: 80px;
 }
 
 .about .Cell {
   padding: 0 32px;
-  box-sizing: border-box;
-  font-size: $fs-small;
-  line-height: 1.6;
+  margin: 0;
+}
+
+.about .Cell.\-4of12 {
+  width: calc(100%*4/12);
 }
 
 .about h3 {
-  display: block;
-  font-weight: normal;
-}
-
-.about ul {
-  margin: 0;
-  padding: 0;
-  color: $c-lite-text;
-}
-
-.about p {
-  color: $c-lite-text;
+  text-align: left;
 }
 
 .about h3 img {
-  display: block;
-  height: 48px;
-  margin: 0 0 16px;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 /* ================ Works =============== */
-.works {
-  text-align: center;
-}
-
 .works .inner {
   max-width: 1200px;
 }
 
 .works h2 {
-  text-align: center;
   font-size: $fs-title;
-  font-weight: normal;
-  margin: 0 0 16px;
 }
 
 .works a {
-  color: $c-active;
   font-size: $fs-bigger;
-  text-decoration: none;
-}
-
-.works a span img {
-  width: 12px;
-  vertical-align: middle;
-  margin-left: 8px;
 }
 
 .works a > img {
-  display: block;
   margin: 64px auto 40px;
 }
 
 /* ================ Team =============== */
-.team {
-  background: $c-lite-gray;
-}
-
 .team h2 {
-  text-align: center;
-  font-size: 32px;
-  font-weight: normal;
+  font-size: $fs-title;
   margin: 0 0 56px;
 }
 
-.team .Cell {
-  text-align: center;
+.team .Cell.\-2of12 {
+  width: calc(100%*2/12);
+  margin-bottom: 0;
 }
 
 .team img {
-  display: block;
-  width: 100px;
   margin: 0 auto 24px;
 }
 
-.team strong {
-  font-weight: normal;
-  display: block;
-  margin-bottom: 8px;
-}
-
-.team p {
-  font-size: $fs-small;
-  margin: 0;
-  color: $c-lite-text;
-}
-
 /* ================ Contact =============== */
-.contact {
-  padding: 80px 0;
+.contact .Cell.\-6of12 {
+  width: calc(100%*6/12);
 }
 
 .contact h2 {
-  font-weight: normal;
   font-size: $fs-sub-title;
-  margin: 0 0 32px;
+  text-align: left;
 }
 
 .contact h3 {
-  font-weight: bold;
-  color: $c-lite-text;
+  text-align: left;
 }
 
 .contact .address {
-  margin-bottom: 24px;
-  padding-left: 40px;
-  background: url(../img/icon-pin.png) no-repeat 0 center;
-  background-size: 20px;
-}
-
-.contact .address strong {
-  display: block;
-  font-weight: normal;
-}
-
-.contact .address span {
-  display: block;
-  color: $c-lite-text;
+  font-size: $fs-normal;
 }
 
 
-/* Homepage */
+/* Workspage */
 
 /* ================ Header =============== */
 .logo.static {
-  width: 200px;
-  min-width: initial;
-  max-width: initial;
   position: static;
   width: 100%;
   box-sizing: border-box;
   display: inline-block;
   transform: none;
-  padding: 0;
   overflow: hidden;
+  margin-top: 8px;
 }
 
 .logo.static img {
-  position: static;
-  transform: none;
-  max-width: 200px;
-  float: left;
-  display: block;
-  margin: 10px 24px 10px 0;
+  margin-top: 16px;
+  margin-bottom: 16px;
 }
 
 .logo.static span {
-  display: block;
-  float: left;
-  font-weight: 500;
-  color: $c-active;
-  font-size: $fs-small;
 }
 
 .workpage h1 {
@@ -273,51 +188,12 @@ header a.active {
   padding-bottom: 0;
 }
 
-.app {
-  margin-top: 120px;
-}
-
 .app h2,
 .website h2,
 .retail h2,
 .branding h2 {
-  color: $c-lite-text;
   font-size: $fs-big;
-  font-weight: normal;
-  margin: 0 0 -40px;
-  border-bottom: 2px solid #eee;
 }
 
-.case {
-  margin: 80px 0;
-}
 
-.case img {
-  display: block;
-  max-width: 100%;
-  margin: 16px 0;
-}
-
-.case span {
-  color: $c-text;
-}
-
-.case span b {
-  color: $c-lite-text;
-  font-size: $fs-small;
-  font-weight: normal;
-}
-
-.backbutton {
-  text-decoration: none;
-  color: $c-active;
-  display: block;
-  margin-bottom: 40px;
-}
-
-.backbutton img {
-  width: 12px;
-  vertical-align: middle;
-  margin-right: 8px;
-  transform: rotate(180deg);
 }

@@ -10,6 +10,7 @@
 @import 'layouts/layout.css';
 
 /* 4. Components */
+@import 'components/component.mobile.css';
 @import 'components/component.css';
 
 /* 5. pages */

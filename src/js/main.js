@@ -1,12 +1,18 @@
 $(function () {
-  // Landing Background Animation
-  $('.landing').particleground({
-    density: 38000,
-    dotColor: '#d6d6d6',
-    lineColor: '#efefef',
-    particleRadius: 4,
-    proximity: 190
-  });
+  var mq = window.matchMedia('(min-width: 600px)');
+
+  if (mq.matches) {
+    // Landing Background Animation
+    $('.landing').particleground({
+      density: 38000,
+      dotColor: '#d6d6d6',
+      lineColor: '#efefef',
+      particleRadius: 4,
+      proximity: 190
+    });
+  } else {
+  }
+
 
   // Waypoints Init
   // Logo
