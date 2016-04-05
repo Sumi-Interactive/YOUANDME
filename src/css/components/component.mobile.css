@@ -168,3 +168,41 @@ header a.active {
   margin: 0;
   color: $c-lite-text;
 }
+
+/* ================ Contact =============== */
+.contact .Cell {
+  width: 100%;
+}
+
+.contact h2 {
+  font-weight: normal;
+  font-size: $fs-bigger;
+  margin: 0 0 24px;
+  text-align: center;
+}
+
+.contact h3 {
+  font-weight: normal;
+  color: $c-lite-text;
+  text-align: center;
+}
+
+.contact .address {
+  margin-bottom: 24px;
+  padding-left: 40px;
+  background: url(../img/icon-pin.png) no-repeat 0 center;
+  background-size: 20px;
+  font-size: $fs-small;
+  line-height: 1.5;
+}
+
+.contact .address strong {
+  display: block;
+  font-weight: normal;
+}
+
+.contact .address span {
+  display: block;
+  color: $c-lite-text;
+}
+

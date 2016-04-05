@@ -137,42 +137,26 @@ header .Cell.\-8of12 {
   margin: 0 auto 24px;
 }
 
-
 /* ================ Contact =============== */
-.contact {
-  padding: 80px 0;
+.contact .Cell.\-6of12 {
+  width: calc(100%*6/12);
 }
 
 .contact h2 {
-  font-weight: normal;
   font-size: $fs-sub-title;
-  margin: 0 0 32px;
+  text-align: left;
 }
 
 .contact h3 {
-  font-weight: bold;
-  color: $c-lite-text;
+  text-align: left;
 }
 
 .contact .address {
-  margin-bottom: 24px;
-  padding-left: 40px;
-  background: url(../img/icon-pin.png) no-repeat 0 center;
-  background-size: 20px;
-}
-
-.contact .address strong {
-  display: block;
-  font-weight: normal;
-}
-
-.contact .address span {
-  display: block;
-  color: $c-lite-text;
+  font-size: $fs-normal;
 }
 
 
-/* Homepage */
+/* Workspage */
 
 /* ================ Header =============== */
 .logo.static {
@@ -249,20 +233,6 @@ header .Cell.\-8of12 {
   color: $c-lite-text;
   font-size: $fs-small;
   font-weight: normal;
-}
-
-.backbutton {
-  text-decoration: none;
-  color: $c-active;
-  display: block;
-  margin-bottom: 40px;
-}
-
-.backbutton img {
-  width: 12px;
-  vertical-align: middle;
-  margin-right: 8px;
-  transform: rotate(180deg);
 }
 
 }
