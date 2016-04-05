@@ -133,3 +133,38 @@ header a.active {
   max-width: 100%;
 }
 
+/* ================ Team =============== */
+.team {
+  background: $c-lite-gray;
+}
+
+.team h2 {
+  text-align: center;
+  font-size: $fs-bigger;
+  font-weight: normal;
+  margin: 0 0 32px;
+}
+
+.team .Cell {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.team img {
+  display: block;
+  width: 100px;
+  margin: 0 auto 12px;
+}
+
+.team strong {
+  font-weight: normal;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.team p {
+  font-size: $fs-small;
+  margin: 0;
+  color: $c-lite-text;
+}
