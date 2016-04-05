@@ -17,12 +17,12 @@
   },
   "homepage": "https://github.com/zackmore/postcss-boilerplate#readme",
   "dependencies": {
+    "fluidbox": "^2.0.0",
     "grd": "^1.2.3",
     "jquery": "^2.2.2",
     "waypoints": "^4.0.0"
   },
   "devDependencies": {
-    "autoprefixer": "^6.3.5",
     "cssnext": "^1.8.4",
     "gulp": "^3.9.1",
     "gulp-clean-css": "^2.0.4",

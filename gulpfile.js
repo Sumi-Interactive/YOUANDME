@@ -20,13 +20,14 @@ gulp.task('html', function() {
 
 gulp.task('css', function() {
   var processors = [
-    autoprefixer,
     cssnext,
     precss
   ];
+
   return gulp.src([
       './node_modules/normalize.css/normalize.css',
       './node_modules/grd/dist/grd.css',
+      './node_modules/fluidbox/dist/css/fluidbox.min.css',
       './src/css/main.css'
     ])
     .pipe(concat('main.css'))
@@ -47,6 +48,7 @@ gulp.task('js', function() {
       './node_modules/jquery/dist/jquery.min.js',
       './src/js/vendor/jquery.particleground.min.js',
       './node_modules/waypoints/lib/jquery.waypoints.min.js',
+      './node_modules/fluidbox/dist/js/jquery.fluidbox.min.js',
       './src/js/main.js',
     ])
     .pipe(concat('main.js'))

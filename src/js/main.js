@@ -59,4 +59,6 @@ $(function () {
     $('header a').removeClass('active');
     $('header a:eq(3)').addClass('active');
   }, { offset: '20%' });
+
+  $('.case a').fluidbox();
 });
