@@ -21,19 +21,14 @@ header .Cell {
 header a {
   color: $c-lite-text;
   text-decoration: none;
-  font-size: $fs-bigger;
   transition: all .4s ease-in-out;
   padding: 4px 12px;
   border-radius: 4px;
 }
 
-header a:hover {
-  color: $c-active;
-}
-
+header a:hover,
 header a.active {
-  background: $c-active;
-  color: $c-white;
+  color: $c-active;
 }
 
 /* ================ Landing =============== */
