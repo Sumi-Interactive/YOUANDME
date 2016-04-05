@@ -1,7 +1,6 @@
 @charset 'UTF-8';
 
 /* 1. Config and Variables  */
-@import 'utils/overwrite.css';
 @import 'utils/variables.css';
 
 /* 2. Base */

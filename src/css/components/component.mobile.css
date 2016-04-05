@@ -1,5 +1,6 @@
 /* Homepage */
 
+/* ================ Header =============== */
 .logo {
   display: block;
   width: 100%;
@@ -62,3 +63,43 @@ header a.active {
 .landing {
   display: none;
 }
+
+/* ================ About =============== */
+.about {
+  background: $c-lite-gray;
+  padding-top: 120px;
+}
+
+.about .Cell {
+  margin: 24px 0;
+  box-sizing: border-box;
+  font-size: $fs-small;
+  line-height: 1.6;
+}
+
+.about .Cell.\-4of12 {
+  width: 100%;
+}
+
+.about h3 {
+  display: block;
+  font-weight: normal;
+  text-align: center;
+}
+
+.about h3 img {
+  display: block;
+  height: 36px;
+  margin: 0 auto 16px;
+}
+
+.about ul {
+  margin: 0;
+  padding: 0 0 0 16px;
+  color: $c-lite-text;
+}
+
+.about p {
+  color: $c-lite-text;
+}
+

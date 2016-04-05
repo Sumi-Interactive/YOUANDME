@@ -84,35 +84,25 @@ header .Cell.\-8of12 {
 
 /* ================ About =============== */
 .about {
-  background: $c-lite-gray;
+  padding-top: 80px;
 }
 
 .about .Cell {
   padding: 0 32px;
-  box-sizing: border-box;
-  font-size: $fs-small;
-  line-height: 1.6;
+  margin: 0;
+}
+
+.about .Cell.\-4of12 {
+  width: calc(100%*4/12);
 }
 
 .about h3 {
-  display: block;
-  font-weight: normal;
-}
-
-.about ul {
-  margin: 0;
-  padding: 0;
-  color: $c-lite-text;
-}
-
-.about p {
-  color: $c-lite-text;
+  text-align: left;
 }
 
 .about h3 img {
-  display: block;
-  height: 48px;
-  margin: 0 0 16px;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 /* ================ Works =============== */
