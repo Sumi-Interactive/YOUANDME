@@ -7,8 +7,8 @@ var gulp = require('gulp'),
     htmlMin = require('gulp-htmlmin'),
     cleanCss = require('gulp-clean-css'),
     uglify = require('gulp-uglify'),
-    livereload = require('gulp-livereload');
-
+    livereload = require('gulp-livereload'),
+    ghPages = require('gulp-gh-pages');
 
 gulp.task('html', function() {
   return gulp.src('./src/*.html')
@@ -62,6 +62,11 @@ gulp.task('watch', function() {
   gulp.watch('./src/css/**/*', ['css']);
   gulp.watch('./src/img/*', ['img']);
   gulp.watch('./src/js/*', ['js']);
+});
+
+gulp.task('deploy', function() {
+  return gulp.src('./dist/**/*')
+    .pipe(ghPages());
 });
 
 gulp.task('default', ['html', 'css', 'img', 'js']);
